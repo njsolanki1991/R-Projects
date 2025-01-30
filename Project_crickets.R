@@ -125,8 +125,7 @@ ggplot(crickets, aes(x=rate, fill = species))+
 #puts the graphs in one column
 ggplot(crickets, aes(x=rate, fill = species))+
   geom_histogram(bins = 15, show.legend = FALSE) +
-  facet_wrap(~species,ncol = 1) + 
-  scale_fill_brewer(palette = "Dark2")
+  facet_wrap(~species,ncol = 1)
 
 
 
